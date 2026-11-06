@@ -1,6 +1,6 @@
 # My Tasks
 
-Five skills for planning, building, reviewing, and testing coding tasks inside a repository.
+Five skills for planning, building, reviewing, and testing coding tasks inside a repository, plus `ask` for read-only questions.
 
 Tasks live in `./tasks/` in your repository, one folder per task, each with a `TASK.md`. Nothing is stored outside the repository, so the skills work with GitHub, GitLab, or any other Git host, and in any editor.
 
@@ -13,6 +13,7 @@ Tasks live in `./tasks/` in your repository, one folder per task, each with a `T
 | `review-code` | Reviews the code written for a task. Does not fix anything. | `code-review.md` |
 | `test-plan` | Runs the task's tests and checks. Does not fix anything. | `test-report.md` |
 | `run-task` | **Claude only.** Runs the whole pipeline, with Claude building and Codex reviewing. | (uses the others) |
+| `ask` | Answers a question by reading code and docs only. It changes no files and runs no code. It isn't part of the pipeline. | nothing |
 
 The three review skills work in any agent. Each one adds a new round to its report, commits and pushes it, comments on the pull/merge request, and ends with a one-line verdict.
 
@@ -55,7 +56,7 @@ Set these up in each project before installing:
 From the project folder:
 
 ```bash
-npx skills add ksmith4134/my-tasks            # choose from all five
+npx skills add ksmith4134/my-tasks            # choose from all six
 npx skills add ksmith4134/my-tasks --skill run-task   # just one
 npx skills add ksmith4134/my-tasks --list     # show what's available
 ```
@@ -71,6 +72,7 @@ Ask your agent to:
 - Work on task 1
 - Work on the next available task
 - Run critique-plan, review-code, or test-plan on task 1
+- Answer a question without changing anything (`$ask` or `/ask`)
 
 In Codex, call a skill with `$name`, for example `$review-code 4`. In Claude Code, use `/name`, for example `/run-task 4`.
 
