@@ -22,7 +22,7 @@ Evaluate without implementing fixes or changing existing application code or tes
 
 ## Report
 
-Start a new report with `# Task NNNN test report`. Append rounds headed `## Round N: YYYY-MM-DD`; preserve earlier rounds.
+Start a new report with `# Task NNNN test report`. Append rounds headed `## Round N: YYYY-MM-DD, commit <short hash> (<branch>)`, naming the commit and branch the round reviewed; preserve earlier rounds.
 
 Include:
 

@@ -19,7 +19,7 @@ Review only. Do not implement fixes, edit `TASK.md`, run code or checks, or chan
 
 ## Report
 
-Start a new report with `# Task NNNN plan critique`. Append rounds headed `## Round N: YYYY-MM-DD`; preserve earlier rounds.
+Start a new report with `# Task NNNN plan critique`. Append rounds headed `## Round N: YYYY-MM-DD, commit <short hash> (<branch>)`, naming the commit and branch the round reviewed; preserve earlier rounds.
 
 Include:
 
