@@ -21,7 +21,7 @@ Do not implement fixes, change existing tests, or create temporary tests. Preser
 
 ## Report
 
-Start a new report with `# Task NNNN code review`. Append rounds headed `## Round N: YYYY-MM-DD`; preserve earlier rounds.
+Start a new report with `# Task NNNN code review`. Append rounds headed `## Round N: YYYY-MM-DD, commit <short hash> (<branch>)`, naming the commit and branch the round reviewed; preserve earlier rounds.
 
 Include:
 
